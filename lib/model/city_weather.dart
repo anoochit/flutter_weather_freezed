@@ -8,7 +8,8 @@ import 'dart:convert';
 part 'city_weather.freezed.dart';
 part 'city_weather.g.dart';
 
-CityWeather cityWeatherFromJson(String str) => CityWeather.fromJson(json.decode(str));
+CityWeather cityWeatherFromJson(String str) =>
+    CityWeather.fromJson(json.decode(str));
 
 String cityWeatherToJson(CityWeather data) => json.encode(data.toJson());
 
@@ -31,7 +32,8 @@ class CityWeather with _$CityWeather {
     int? cod,
   }) = _CityWeather;
 
-  factory CityWeather.fromJson(Map<String, dynamic> json) => _$CityWeatherFromJson(json);
+  factory CityWeather.fromJson(Map<String, dynamic> json) =>
+      _$CityWeatherFromJson(json);
 }
 
 @freezed
@@ -98,7 +100,8 @@ class Weather with _$Weather {
     String? icon,
   }) = _Weather;
 
-  factory Weather.fromJson(Map<String, dynamic> json) => _$WeatherFromJson(json);
+  factory Weather.fromJson(Map<String, dynamic> json) =>
+      _$WeatherFromJson(json);
 }
 
 @freezed
